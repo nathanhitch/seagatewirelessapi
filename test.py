@@ -1,0 +1,15 @@
+import api
+#set the ip to the ip of your seagate wireless comment out the next line if you are directly connected to it
+api.set_ip("192.168.0.6")
+print("getAPIVersions")
+print(api.getAPIVersions())
+print("getDataRates")
+print(api.getDataRates())
+print("getHDDStat")
+print(api.getHDDStat())
+print("getscannednetworks")
+print(api.getscannednetworks())
+print("getMaxClient")
+print(api.getMaxClient())
+print("getLogs")
+print(api.getLogs())
