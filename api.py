@@ -55,3 +55,9 @@ def batteryStatus():
     req = urllib.request.urlopen(url)
     data = req.read().decode('utf-8')
     return json.loads(data)
+
+def getNetworkInformation():
+    url = "http://" + ip + "/getNetworkInformation.psp"
+    req = urllib.request.urlopen(url)
+    data = req.read().decode('utf-8')
+    return json.loads(data)
