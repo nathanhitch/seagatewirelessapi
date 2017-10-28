@@ -48,3 +48,9 @@ def getTime():
     req = urllib.request.urlopen(url)
     data = req.read().decode('utf-8')
     return data
+
+def batteryStatus():
+    url = "http://" + ip + "/batteryStatus.psp"
+    req = urllib.request.urlopen(url)
+    data = req.read().decode('utf-8')
+    return data
